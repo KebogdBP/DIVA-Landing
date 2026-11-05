@@ -1,16 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="560" height="150" viewBox="0 0 560 150" role="img" aria-labelledby="title">
-  <title id="title">DIVA futuristic wordmark</title>
-  <defs>
-    <mask id="cuts">
-      <rect width="560" height="150" fill="white"/>
-      <path d="M17 58H76" stroke="black" stroke-width="7" stroke-linecap="round"/>
-      <path d="M402 58H442" stroke="black" stroke-width="7" stroke-linecap="round"/>
-    </mask>
-  </defs>
-  <g fill="none" stroke="#F8F5F1" stroke-width="27" stroke-linecap="round" stroke-linejoin="round" mask="url(#cuts)">
-    <path d="M32 37v76m0-76h50c28 0 45 17 45 38s-17 38-45 38H32"/>
-    <path d="M174 37h48m-24 0v76m-24 0h48"/>
-    <path d="m266 37 39 76 39-76"/>
-    <path d="M396 113V76c0-27 20-42 45-42s45 15 45 42v37M396 86h90"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="60 70 1070 270" role="img" aria-labelledby="title">
+  <title id="title">DIVA</title>
+  <g fill="#F8F8F6">
+    <path d="M100 80H267C344 80 393 129 393 205C393 281 343 330 267 330H101C79 330 67 315 67 294V213C67 192 80 180 101 180H134V264H267C306 264 326 242 326 205C326 166 305 145 266 145H67V115C67 94 80 80 100 80Z"/>
+    <path d="M410 80H435C461 80 478 98 478 123V330H446C422 330 410 314 410 290Z"/>
+    <path d="M484 80H540L638 263C645 277 652 278 660 263L758 107C769 89 788 80 810 80H828L699 299C687 320 673 330 651 330H632C610 330 594 318 583 296Z"/>
+    <path fill-rule="evenodd" d="M800 330V181C800 120 841 80 907 80H1004C1073 80 1110 122 1110 182V330H1075C1051 330 1040 313 1040 289V264H880V330ZM880 205H1040V184C1040 158 1025 145 996 145H923C895 145 880 159 880 184Z"/>
   </g>
 </svg>

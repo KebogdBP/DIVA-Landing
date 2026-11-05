@@ -1,4 +1,4 @@
-/* Brand-led first screen. The SVG wordmark is a native path drawing, not text converted to an image. */
+/* The same traced vector wordmark appears in the header and the hero. */
 .brand-lockup{display:inline-flex;align-items:center;gap:10px;flex:none;line-height:0}
 .brand-lockup .brand-mark{width:36px;height:auto;max-width:none}
 .brand-lockup .brand-wordmark{width:98px;height:auto;max-width:none}
@@ -14,20 +14,15 @@
 .hero-brand-top span:first-child::before{content:"";display:inline-block;width:22px;height:1px;margin:0 12px 3px 0;background:#ff8e4e}
 .hero-brand-top span:last-child{color:#777f7f}
 .hero-brand-center{width:100%;margin:auto 0;padding:32px 0 35px}
-.hero-logo{display:flex;align-items:center;gap:clamp(14px,2.9vw,40px);width:100%;max-width:1160px;margin:0;line-height:0}
-.hero-logo-mark{display:block;flex:none;width:clamp(80px,10vw,132px);height:auto;filter:drop-shadow(0 7px 23px rgba(255,108,31,.2))}
-.hero-logo-type{display:block;min-width:0;width:min(79vw,940px);height:auto;overflow:visible;filter:drop-shadow(0 14px 31px rgba(214,226,225,.07))}
-.hero-glyph{transform-box:fill-box;transform-origin:center;will-change:transform,opacity}
-.hero-signal{position:relative;width:min(100%,1120px);height:1px;margin-top:22px;background:rgba(230,237,235,.16);transform-origin:left center}
-.hero-signal span{display:block;width:27%;height:1px;background:linear-gradient(90deg,#ff7b33,#ffbf83,transparent)}
-.hero-signal i{position:absolute;left:26%;top:-3px;width:6px;height:6px;border-radius:50%;background:#ffb06c;box-shadow:0 0 16px rgba(255,148,69,.7)}
-.hero-acronym{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));width:min(100%,1120px);margin-top:25px}
-.hero-acronym-item{display:flex;align-items:baseline;gap:11px;min-width:0;padding-right:22px;margin-right:22px;border-right:1px solid rgba(234,239,236,.14)}
-.hero-acronym-item:last-child{border-right:0;margin-right:0}
-.hero-acronym-item b{color:#ff9859;font:500 24px/1 'IBM Plex Mono',monospace}
-.hero-acronym-item span{color:#d0d5d2;font:400 clamp(13px,1.35vw,18px)/1.25 Onest,Arial,sans-serif;letter-spacing:.005em}
-.hero-brand-bottom{display:flex;align-items:flex-end;justify-content:space-between;gap:36px;padding-top:24px;border-top:1px solid rgba(255,255,255,.14)}
-.hero-tagline{margin:0 0 11px;color:#f3f5f2;font-size:clamp(24px,2.8vw,39px);font-weight:500;line-height:1.12;letter-spacing:-.055em}
+.hero-logo{display:flex;align-items:center;gap:2.3%;width:100%;max-width:1160px;margin:0;line-height:0}
+.hero-logo-mark{display:block;flex:none;width:20.7%;height:auto;filter:drop-shadow(0 7px 23px rgba(255,108,31,.2))}
+.hero-logo-type{display:block;flex:1;min-width:0;width:0;height:auto;filter:drop-shadow(0 14px 31px rgba(214,226,225,.07))}
+.hero-acronym{display:flex;align-items:baseline;flex-wrap:nowrap;gap:clamp(14px,2.4vw,32px);width:max-content;max-width:100%;margin:22px 0 0 23%}
+.hero-acronym-item{display:inline-flex;align-items:baseline;gap:7px;flex:none;white-space:nowrap}
+.hero-acronym-item b{color:#ff9859;font:500 clamp(17px,1.6vw,22px)/1 'IBM Plex Mono',monospace}
+.hero-acronym-item span{color:#d0d5d2;font:400 clamp(13px,1.35vw,18px)/1.25 'Exo 2',Arial,sans-serif;letter-spacing:.005em}
+.hero-brand-bottom{display:flex;align-items:center;justify-content:space-between;gap:36px;padding-top:24px;border-top:1px solid rgba(255,255,255,.14)}
+.hero-tagline{margin:38px 0 0 23%;color:#f3f5f2;font:500 clamp(29px,3.05vw,42px)/1.16 'Exo 2',Arial,sans-serif;letter-spacing:-.025em}
 .hero-tagline span{color:#ff8647}
 .hero-operations{color:#858e8b;font:500 9px/1.5 'IBM Plex Mono',monospace;letter-spacing:.15em}
 .hero-operations i{padding:0 12px;color:#f3874f;font-style:normal}
@@ -36,7 +31,7 @@
 .hero-enter:hover,.hero-enter:focus-visible{color:#fff;border-color:#ff9d61;outline:none}
 .hero-enter:hover span,.hero-enter:focus-visible span{transform:translate(3px,-3px)}
 
-@media (max-width:900px){.hero-brand-inner{min-height:calc(100svh - 74px)}.hero-logo-mark{width:clamp(67px,9vw,110px)}.hero-logo-type{width:calc(100% - 110px)}}
-@media (max-width:760px){.brand-lockup .brand-mark{width:32px}.brand-lockup .brand-wordmark{width:86px}.hero-brand{min-height:calc(100svh - 67px)}.hero-brand-inner{min-height:calc(100svh - 67px);padding-top:29px;padding-bottom:32px;gap:26px}.hero-brand-top{font-size:8px}.hero-brand-top span:last-child{display:none}.hero-brand-center{margin:auto 0;padding:16px 0}.hero-logo{gap:10px}.hero-logo-mark{width:56px}.hero-logo-type{width:calc(100% - 66px)}.hero-signal{margin-top:16px}.hero-acronym{grid-template-columns:repeat(2,minmax(0,1fr));gap:19px 10px;margin-top:24px}.hero-acronym-item{gap:8px;padding-right:0;margin-right:0;border:0}.hero-acronym-item b{font-size:21px}.hero-acronym-item span{font-size:13px}.hero-brand-bottom{display:block;padding-top:20px}.hero-tagline{font-size:clamp(25px,6.2vw,34px);margin-bottom:13px}.hero-operations{font-size:8px;letter-spacing:.08em}.hero-operations i{padding:0 7px}.hero-enter{margin-top:22px;min-width:0;width:100%;font-size:12px}}
-@media (max-width:420px){.hero-logo-mark{width:46px}.hero-logo-type{width:calc(100% - 56px)}.hero-acronym-item span{font-size:12px}.hero-brand-top span:first-child::before{width:15px;margin-right:7px}.hero-brand-inner{gap:16px}}
-@media (prefers-reduced-motion:reduce){.hero-glyph{will-change:auto}.hero-enter span{transition:none}}
+@media (max-width:900px){.hero-brand-inner{min-height:calc(100svh - 74px)}.hero-acronym,.hero-tagline{margin-left:0}}
+@media (max-width:760px){.brand-lockup .brand-mark{width:32px}.brand-lockup .brand-wordmark{width:86px}.hero-brand{min-height:calc(100svh - 67px)}.hero-brand-inner{min-height:calc(100svh - 67px);padding-top:29px;padding-bottom:32px;gap:26px}.hero-brand-top{font-size:8px}.hero-brand-top span:last-child{display:none}.hero-brand-center{margin:auto 0;padding:16px 0}.hero-acronym{gap:clamp(7px,2.2vw,16px);margin-top:18px}.hero-acronym-item{gap:5px}.hero-acronym-item b{font-size:13px}.hero-acronym-item span{font-size:clamp(10px,1.8vw,12px)}.hero-tagline{margin-top:28px;font-size:clamp(25px,5vw,34px)}.hero-brand-bottom{display:block;padding-top:20px}.hero-operations{font-size:8px;letter-spacing:.08em}.hero-operations i{padding:0 7px}.hero-enter{margin-top:22px;min-width:0;width:100%;font-size:12px}}
+@media (max-width:420px){.hero-acronym{gap:8px}.hero-acronym-item{gap:4px}.hero-acronym-item b{font-size:14px}.hero-acronym-item span{font-size:12px}.hero-tagline{font-size:clamp(24px,6.2vw,29px)}.hero-brand-top span:first-child::before{width:15px;margin-right:7px}.hero-brand-inner{gap:16px}}
+@media (prefers-reduced-motion:reduce){.hero-enter span{transition:none}}
