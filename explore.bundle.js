@@ -6966,7 +6966,7 @@ function renderSphere() {
     card.style.transform = `translate(-50%, -50%) translate3d(${vector.x.toFixed(2)}px, ${vector.y.toFixed(2)}px, ${vector.z.toFixed(2)}px)`;
     card.style.zIndex = String(Math.round(vector.z + 220));
     card.style.opacity = String(Math.max(0.29, Math.min(1, 0.62 + vector.z / (rad * 1.8))));
-    card.style.pointerEvents = vector.z < -rad * 0.5 ? "none" : "auto";
+    card.style.pointerEvents = card.classList.contains("is-picked") ? "none" : "auto";
   });
 }
 renderSphere();
@@ -7113,6 +7113,7 @@ async function waitForPhone() {
 async function flyToDrop(card) {
   const { clone, box } = cloneForFlight(card);
   card.classList.add("is-picked");
+  card.style.pointerEvents = "none";
   updateStatus(`${card.dataset.file} \u2192 DIVA`);
   await waitForPhone();
   const target = received.getBoundingClientRect();
@@ -7134,7 +7135,10 @@ function resetExplore() {
   selected = null;
   outputName = "";
   signed = false;
-  cards.forEach((card) => card.classList.remove("is-picked"));
+  cards.forEach((card) => {
+    card.classList.remove("is-picked");
+    card.style.pointerEvents = "auto";
+  });
   [received, panel, signature, library, opened].forEach(hide);
   filesTab.disabled = true;
   panelActions.innerHTML = "";
@@ -7150,8 +7154,18 @@ cards.forEach((card) => card.addEventListener("click", async () => {
   outputName = card.dataset.file;
   signed = false;
   busy = true;
-  await flyToDrop(card);
-  busy = false;
+  try {
+    await flyToDrop(card);
+  } catch (error) {
+    document.querySelectorAll(".explore-fly").forEach((clone) => clone.remove());
+    setReceived(card);
+    show(received);
+    initialPanel();
+    updateStatus(`\u0412\u044B\u0431\u0435\u0440\u0438\u0442\u0435 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0435 \u0434\u043B\u044F ${card.dataset.file}`);
+    console.error("DIVA card animation failed; showing the file directly.", error);
+  } finally {
+    busy = false;
+  }
 }));
 resetButton.addEventListener("click", resetExplore);
 async function showProgress(label2, nextName = outputName) {

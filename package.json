@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "serve": "python3 -m http.server 5173 --bind 127.0.0.1",
     "build:explore": "esbuild explore.js --bundle --format=esm --target=es2020 --external:./assets/vendor/three.module.js --outfile=explore.bundle.js"
   },
   "dependencies": {
