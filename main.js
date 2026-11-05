@@ -5,8 +5,8 @@ if (window.gsap && !reducedMotion.matches) {
     .from('.hero-brand-top', { autoAlpha: 0, y: 12, duration: .55 })
     .from('.hero-logo-mark', { autoAlpha: 0, x: -24, duration: .85 }, '-=.23')
     .from('.hero-logo-type', { autoAlpha: 0, y: 18, duration: .82, clearProps: 'transform,opacity,visibility' }, '-=.62')
-    .from('.hero-acronym-item', { autoAlpha: 0, y: 14, duration: .58, stagger: .075, clearProps: 'transform,opacity,visibility' }, '-=.41')
-    .from('.hero-tagline', { autoAlpha: 0, y: 12, duration: .58, clearProps: 'transform,opacity,visibility' }, '-=.37')
+    .from('.hero-tagline', { autoAlpha: 0, y: 12, duration: .58, clearProps: 'transform,opacity,visibility' }, '-=.41')
+    .from('.hero-acronym-item', { autoAlpha: 0, y: 14, duration: .58, stagger: .075, clearProps: 'transform,opacity,visibility' }, '-=.37')
     .from('.hero-brand-bottom', { autoAlpha: 0, y: 12, duration: .6, clearProps: 'transform,opacity,visibility' }, '-=.29');
 
   if (window.ScrollTrigger) {
