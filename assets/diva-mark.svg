@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 608 545" role="img" aria-labelledby="title">
+  <title id="title">DIVA — двойной шеврон</title>
+  <defs>
+    <linearGradient id="orange" x1=".1" y1="0" x2=".9" y2="1" objectBoundingBox="true">
+      <stop offset="0" stop-color="#FFB65E"/>
+      <stop offset=".36" stop-color="#FF861F"/>
+      <stop offset="1" stop-color="#F45C0B"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="0" y2="1" objectBoundingBox="true">
+      <stop offset="0" stop-color="#FFD49B" stop-opacity=".7"/>
+      <stop offset=".45" stop-color="#FFB15C" stop-opacity="0"/>
+      <stop offset="1" stop-color="#8C2F0A" stop-opacity=".5"/>
+    </linearGradient>
+  </defs>
+  <g fill="url(#orange)" stroke="url(#edge)" stroke-width="3" stroke-linejoin="round">
+    <path d="M15 103 Q19 98 31 98 H137 Q160 98 174 116 L278 242 Q295 261 279 281 L176 406 Q162 424 139 424 H29 Q9 424 2 413 Q-3 404 8 389 L95 283 Q105 271 99 259 L4 129 Q-4 116 15 103Z"/>
+    <path d="M204 3 Q210 -1 225 0 H354 Q374 0 389 18 L592 244 Q611 264 594 284 L390 525 Q376 545 354 545 H221 Q198 545 190 533 Q185 524 200 506 L383 287 Q395 274 388 262 L195 31 Q181 15 204 3Z"/>
+  </g>
+</svg>

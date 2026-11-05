@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="150" viewBox="0 0 560 150" role="img" aria-labelledby="title">
+  <title id="title">DIVA futuristic wordmark</title>
+  <defs>
+    <mask id="cuts">
+      <rect width="560" height="150" fill="white"/>
+      <path d="M17 58H76" stroke="black" stroke-width="7" stroke-linecap="round"/>
+      <path d="M402 58H442" stroke="black" stroke-width="7" stroke-linecap="round"/>
+    </mask>
+  </defs>
+  <g fill="none" stroke="#F8F5F1" stroke-width="27" stroke-linecap="round" stroke-linejoin="round" mask="url(#cuts)">
+    <path d="M32 37v76m0-76h50c28 0 45 17 45 38s-17 38-45 38H32"/>
+    <path d="M174 37h48m-24 0v76m-24 0h48"/>
+    <path d="m266 37 39 76 39-76"/>
+    <path d="M396 113V76c0-27 20-42 45-42s45 15 45 42v37M396 86h90"/>
+  </g>
+</svg>

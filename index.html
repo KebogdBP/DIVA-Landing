@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b0c0c" />
+  <meta name="description" content="DIVA — концепт приложения для загрузки, конвертации и хранения файлов: видео по ссылке, DOCX в PDF, PNG в JPEG и обрезка аудио." />
+  <title>DIVA — файлы в нужном формате</title>
+  <link rel="icon" type="image/svg+xml" href="assets/diva-icon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Onest:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="editorial.css" />
+  <link rel="stylesheet" href="demo-v2.css" />
+  <link rel="stylesheet" href="explore.css" />
+  <link rel="stylesheet" href="hero-brand.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержанию</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand brand-lockup" href="#top" aria-label="DIVA — на главную"><img class="brand-mark" src="assets/diva-mark.svg" alt="" width="36" height="34" /><img class="brand-wordmark" src="assets/diva-wordmark.svg" alt="" width="98" height="27" /></a>
+      <nav aria-label="Основная навигация"><a href="#explore">Выбрать файл</a><a href="#process">Видео-сценарий</a><a href="#possibilities">Возможности</a><a href="#interface">Концепт</a></nav>
+      <a class="header-link" href="#explore">Открыть сцену <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero hero-brand" id="top" aria-labelledby="hero-title">
+      <div class="container hero-brand-inner">
+        <div class="hero-brand-top"><span>DIVA / DIGITAL FILE WORKSPACE</span><span>КОНЦЕПТ IPHONE-ПРИЛОЖЕНИЯ</span></div>
+        <div class="hero-brand-center">
+          <h1 class="hero-logo" id="hero-title" aria-label="DIVA">
+            <img class="hero-logo-mark" src="assets/diva-mark.svg" alt="" width="130" height="116" />
+            <svg class="hero-logo-type" viewBox="0 0 560 150" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <defs>
+                <linearGradient id="hero-type-fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" /><stop offset=".55" stop-color="#F3F5F4" /><stop offset="1" stop-color="#BBC2C1" /></linearGradient>
+                <mask id="hero-type-cuts"><rect width="560" height="150" fill="#fff" /><path d="M17 58H76 M402 58H442" stroke="#000" stroke-width="7" stroke-linecap="round" /></mask>
+              </defs>
+              <g class="hero-type-ink" fill="none" stroke="url(#hero-type-fill)" stroke-width="27" stroke-linecap="round" stroke-linejoin="round" mask="url(#hero-type-cuts)">
+                <path class="hero-glyph" d="M32 37v76m0-76h50c28 0 45 17 45 38s-17 38-45 38H32" />
+                <path class="hero-glyph" d="M174 37h48m-24 0v76m-24 0h48" />
+                <path class="hero-glyph" d="m266 37 39 76 39-76" />
+                <path class="hero-glyph" d="M396 113V76c0-27 20-42 45-42s45 15 45 42v37M396 86h90" />
+              </g>
+            </svg>
+          </h1>
+          <div class="hero-signal" aria-hidden="true"><span></span><i></i></div>
+          <div class="hero-acronym" aria-label="D — Documents, I — Images, V — Videos, A — Audios">
+            <div class="hero-acronym-item"><b>D</b><span>Documents</span></div>
+            <div class="hero-acronym-item"><b>I</b><span>Images</span></div>
+            <div class="hero-acronym-item"><b>V</b><span>Videos</span></div>
+            <div class="hero-acronym-item"><b>A</b><span>Audios</span></div>
+          </div>
+        </div>
+        <div class="hero-brand-bottom"><div><p class="hero-tagline">Искусство работы с файлами<span>.</span></p><span class="hero-operations">ЗАГРУЗКА <i>/</i> КОНВЕРТАЦИЯ <i>/</i> СОХРАНЕНИЕ</span></div><a class="hero-enter" href="#explore">Исследовать DIVA <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="explore-section" id="explore" aria-labelledby="explore-title">
+      <div class="explore-sticky">
+        <div class="container explore-heading">
+          <div><span class="section-index">01 / ИНТЕРАКТИВНАЯ СЦЕНА</span><h2 id="explore-title">Выберите файл.<br /><em>Дальше — DIVA.</em></h2></div>
+          <p>Прокрутите страницу, чтобы повернуть сферу. Нажмите на файл и выберите действие в приложении.</p>
+        </div>
+        <div class="container explore-layout" id="explore-layout">
+          <div class="orb-area">
+            <div class="orb-scene" id="orb-scene" aria-label="Сфера файлов" tabindex="0">
+              <div class="orb-glow" aria-hidden="true"></div><div class="orb-ring orb-ring-one" aria-hidden="true"></div><div class="orb-ring orb-ring-two" aria-hidden="true"></div><div class="orb-ring orb-ring-three" aria-hidden="true"></div>
+              <button class="orb-card orb-card-video" type="button" data-kind="video" data-file="summer-trip.mp4" data-lat="-19" data-lon="-35" aria-label="Выбрать видео summer-trip.mp4"><span class="orb-art"><img src="assets/mountain-video-poster.jpg" alt="" /><i>▶</i></span><span class="orb-meta"><b>summer-trip.mp4</b><small>ВИДЕО / MP4</small></span></button>
+              <button class="orb-card orb-card-pdf" type="button" data-kind="pdf" data-file="agreement.pdf" data-lat="5" data-lon="38" aria-label="Выбрать PDF agreement.pdf"><span class="orb-art"><i class="orb-paper"><b>PDF</b><em></em><em></em><em></em></i></span><span class="orb-meta"><b>agreement.pdf</b><small>ДОКУМЕНТ / PDF</small></span></button>
+              <button class="orb-card orb-card-image" type="button" data-kind="image" data-file="sunset.png" data-lat="37" data-lon="-64" aria-label="Выбрать изображение sunset.png"><span class="orb-art"><img src="assets/pixabay-sunset.jpg" alt="" /></span><span class="orb-meta"><b>sunset.png</b><small>ИЗОБРАЖЕНИЕ / PNG</small></span></button>
+              <button class="orb-card orb-card-audio" type="button" data-kind="audio" data-file="voice-note.wav" data-lat="-42" data-lon="60" aria-label="Выбрать аудио voice-note.wav"><span class="orb-art orb-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><span class="orb-meta"><b>voice-note.wav</b><small>АУДИО / WAV</small></span></button>
+              <button class="orb-card orb-card-doc" type="button" data-kind="doc" data-file="draft.docx" data-lat="62" data-lon="122" aria-label="Выбрать документ draft.docx"><span class="orb-art"><i class="orb-paper"><b>DOCX</b><em></em><em></em><em></em></i></span><span class="orb-meta"><b>draft.docx</b><small>ДОКУМЕНТ / DOCX</small></span></button>
+              <button class="orb-card orb-card-video orb-card-back" type="button" data-kind="video" data-file="field-notes.mov" data-lat="-12" data-lon="158" aria-label="Выбрать видео field-notes.mov"><span class="orb-art"><img src="assets/pixabay-sunset.jpg" alt="" /><i>▶</i></span><span class="orb-meta"><b>field-notes.mov</b><small>ВИДЕО / MOV</small></span></button>
+              <button class="orb-card orb-card-image orb-card-back" type="button" data-kind="image" data-file="cover.jpg" data-lat="-53" data-lon="-149" aria-label="Выбрать изображение cover.jpg"><span class="orb-art"><img src="assets/pixabay-sunset.jpg" alt="" /></span><span class="orb-meta"><b>cover.jpg</b><small>ИЗОБРАЖЕНИЕ / JPG</small></span></button>
+            </div>
+            <div class="orb-legend"><span><b class="orb-legend-dot"></b> ПРОКРУТКА → ПОВОРОТ СФЕРЫ</span><button id="explore-reset" type="button">Сбросить выбор ↗</button></div>
+          </div>
+          <div class="explore-direction" aria-hidden="true"><span></span><img src="assets/diva-mark.svg" alt="" /><small>В DIVA</small></div>
+          <div class="explore-phone-column">
+            <div class="explore-phone-perspective" id="explore-phone-perspective">
+              <div class="explore-phone" id="explore-phone" aria-label="Интерактивный концепт DIVA на iPhone">
+                <img class="explore-phone-shot" src="assets/diva-iphone-concept.png" alt="Главный экран концепта DIVA" draggable="false" />
+                <div class="explore-received" id="explore-received" aria-live="polite"></div>
+                <div class="explore-panel" id="explore-panel" aria-live="polite"><span class="explore-panel-label" id="explore-panel-label"></span><strong id="explore-panel-title"></strong><div class="explore-panel-actions" id="explore-panel-actions"></div><div class="explore-panel-progress" id="explore-panel-progress"><span><i id="explore-progress-fill"></i></span><small id="explore-progress-text">0%</small></div></div>
+                <svg class="explore-signature" id="explore-signature" viewBox="0 0 240 100" aria-hidden="true"><path d="M15 72 C28 42 34 26 43 30 C55 35 24 80 41 72 C60 62 66 42 64 63 C63 85 82 42 87 55 C88 67 97 69 105 55 C111 45 114 49 116 59 C119 80 138 35 145 47 C153 61 139 75 154 66 C168 57 181 52 196 61 C207 66 218 64 228 55" /></svg>
+                <div class="explore-library" id="explore-library"><span class="explore-library-title">‹ <b>Мои файлы</b></span><small>Сохранённое в DIVA</small><div class="explore-library-filters"><b>Все</b><span>Видео</span><span>Документы</span></div><button class="explore-library-file" id="explore-library-file" type="button"></button></div>
+                <div class="explore-open" id="explore-open"><span class="explore-library-title">‹ <b>Мои файлы</b></span><div class="explore-open-media" id="explore-open-media"></div><h3 id="explore-open-name"></h3><p id="explore-open-info"></p></div>
+                <button class="explore-files-hotspot" id="explore-files-tab" type="button" aria-label="Открыть Мои файлы" disabled></button>
+              </div>
+            </div>
+            <p class="explore-phone-hint">Потяните телефон, чтобы повернуть его.</p>
+          </div>
+        </div>
+        <div class="container explore-foot"><span id="explore-status" role="status" aria-live="polite">Выберите файл в сфере</span><span>ПРОТОТИП ВЗАИМОДЕЙСТВИЯ · ОПЕРАЦИИ ПОКАЗАНЫ КАК КОНЦЕПТ</span></div>
+      </div>
+    </section>
+
+      <section class="section demo-section" id="process" aria-labelledby="demo-title">
+        <div class="container">
+          <div class="demo-heading reveal">
+            <div><span class="section-index">02 / ВИДЕО-СЦЕНАРИЙ</span><h2 id="demo-title">Из просмотра —<br /><span>в мои файлы.</span></h2></div>
+            <div class="demo-heading-side"><p>Короткая демонстрация: ролик переходит в DIVA, пользователь выбирает качество и открывает сохранённый файл.</p><div class="flow-controls"><button class="button button-primary" id="demo-replay" type="button">Запустить сценарий <span aria-hidden="true">↗</span></button><button class="flow-pause" id="demo-pause" type="button" aria-label="Приостановить анимацию">Пауза</button></div></div>
+          </div>
+          <div class="demo-shell flow-shell" id="demo-shell" aria-label="Анимированная демонстрация сохранения видео в DIVA">
+            <canvas class="demo-particles" id="demo-particles" aria-hidden="true"></canvas>
+            <div class="flow-halo" aria-hidden="true"></div>
+            <div class="flow-stage">
+              <div class="flow-watch" id="flow-watch" aria-label="Иллюстрация страницы просмотра видео">
+                <div class="flow-browser-top"><span class="flow-window-dots" aria-hidden="true"><i></i><i></i><i></i></span><div class="flow-address"><span class="flow-lock" aria-hidden="true">●</span> youtube.com/watch?v=summer-trip</div><span class="flow-browser-menu" aria-hidden="true">＋</span></div>
+                <div class="flow-youtube">
+                  <div class="flow-yt-header"><span class="flow-menu-icon" aria-hidden="true">☰</span><div class="flow-yt-logo"><span class="flow-yt-play" aria-hidden="true">▶</span><b>YouTube</b><sup>RU</sup></div><div class="flow-search"><span>summer trip</span><span aria-hidden="true">⌕</span></div><span class="flow-header-icons" aria-hidden="true">◉　♧</span><span class="flow-user">И</span></div>
+                  <div class="flow-yt-body"><div class="flow-main-col"><div class="flow-player" id="flow-player"><video id="source-video" src="assets/mountain-video.mp4" poster="assets/mountain-video-poster.jpg" muted autoplay loop playsinline preload="metadata"></video><div class="flow-player-shade"></div><div class="flow-video-controls"><span class="flow-control-play">Ⅱ</span><span class="flow-time">0:03 / 0:07</span><span class="flow-seek"><i></i></span><span>◖))</span><span>⛶</span></div></div><h3>Летний маршрут: семь секунд в горах</h3><div class="flow-meta-row"><span class="flow-channel-avatar">W</span><div class="flow-channel"><b>Wander Notes</b><small>2,4 тыс. подписчиков</small></div><span class="flow-subscribe">Подписаться</span><span class="flow-social">👍 1,2 тыс.</span><span class="flow-social">↗ Поделиться</span></div><div class="flow-description">1,8 тыс. просмотров · 2 дня назад<br />Короткий фрагмент прогулки в горах. Сохраните материал для работы с файлом в DIVA.</div></div><aside class="flow-recommendations" aria-label="Другие видео"><div class="flow-rec"><span class="rec-image rec-one"></span><div><b>Утро в Альпах</b><small>Nature Film<br />12 тыс. просмотров</small></div></div><div class="flow-rec"><span class="rec-image rec-two"></span><div><b>Маршрут выходного дня</b><small>Wander Notes<br />3,2 тыс. просмотров</small></div></div><div class="flow-rec"><span class="rec-image rec-three"></span><div><b>Тихий вечер у озера</b><small>Field Journal<br />8,7 тыс. просмотров</small></div></div></aside></div>
+                </div>
+              </div>
+              <div class="flow-bridge" aria-hidden="true"><span class="flow-bridge-line"></span><img src="assets/diva-mark.svg" alt="" /><span>В DIVA</span></div>
+              <div class="flow-phone" id="flow-phone" aria-label="Экран приложения DIVA на iPhone">
+                <img class="flow-phone-shot" src="assets/diva-iphone-concept.png" alt="Концепт главного экрана DIVA на iPhone" />
+                <div class="flow-drop" id="flow-drop"><video src="assets/mountain-video.mp4" muted loop playsinline preload="metadata"></video><div class="flow-drop-shade"></div><span class="flow-drop-play">▶</span><span class="flow-drop-name">summer-trip.mp4 <small>Видео по ссылке</small></span></div>
+                <div class="flow-glass flow-action" id="flow-action"><span class="flow-panel-kicker">ВИДЕО ГОТОВО К ЗАГРУЗКЕ</span><button class="flow-glass-button" type="button" tabindex="-1">Загрузить видео <span>↓</span></button></div>
+                <div class="flow-glass flow-quality" id="flow-quality"><span class="flow-panel-kicker">КАЧЕСТВО ВИДЕО</span><div class="flow-quality-row"><span>480p</span><span>720p</span><span>1080p</span></div><small>Выберите размер файла</small></div>
+                <div class="flow-glass flow-progress" id="flow-progress"><div><span>Загрузка видео</span><strong id="flow-percent">0%</strong></div><span class="flow-progress-track"><i id="flow-progress-fill"></i></span><small>summer-trip.mp4</small></div>
+                <div class="flow-files-screen" id="flow-files"><span class="flow-screen-top">‹ <b>Мои файлы</b></span><span class="flow-files-caption">Сохранённое в DIVA</span><div class="flow-file-filters"><b>Все</b><span>Видео</span><span>Фото</span><span>Документы</span></div><div class="flow-saved-file" id="flow-saved"><img src="assets/mountain-video-poster.jpg" alt="" /><span><strong>summer-trip.mp4</strong><small>Видео · 480p · только что</small></span><b>›</b></div><div class="flow-file-rule"></div><div class="flow-file-rule short"></div></div>
+                <div class="flow-open-screen" id="flow-open"><span class="flow-screen-top">‹ <b>Мои файлы</b></span><div class="flow-open-player"><video src="assets/mountain-video.mp4" muted loop playsinline preload="metadata"></video><span>▶</span></div><h3>summer-trip.mp4</h3><p>Видео · 480p · сохранено в DIVA</p><div class="flow-open-actions"><span>▶ Просмотр</span><span>↗ Поделиться</span></div></div>
+                <div class="flow-nav-pulse" id="flow-nav-pulse" aria-hidden="true"></div>
+              </div>
+              <div class="flow-flight" id="flow-flight" aria-hidden="true"><video src="assets/mountain-video.mp4" muted loop playsinline preload="metadata"></video><span class="flow-flight-border"></span></div>
+              <div class="flow-cursor" id="flow-cursor" aria-hidden="true"><svg width="29" height="34" viewBox="0 0 29 34"><path d="M3 2v25l6-5 5 10 5-3-5-10 8-1L3 2Z" fill="#fff" stroke="#111" stroke-width="2"/></svg></div>
+            </div>
+            <div class="flow-bottom"><div class="flow-status" role="status" aria-live="polite"><span></span><strong id="demo-status-text">Готово к просмотру</strong></div><div class="flow-steps" aria-hidden="true"><span class="is-active" data-step="1">01 Просмотр</span><span data-step="2">02 DIVA</span><span data-step="3">03 Качество</span><span data-step="4">04 Мои файлы</span></div><span class="flow-caption-tag">КОНЦЕПТ / НЕ РЕАЛЬНАЯ ЗАГРУЗКА</span></div>
+          </div>
+          <p class="demo-caption">Анимация показывает предполагаемый путь пользователя. В сцене проигрывается <a href="https://www.pexels.com/video/nature-summer-traveling-mountain-4087310/" target="_blank" rel="noopener noreferrer">ролик Yaroslav Shuraev / Pexels</a>; реальная загрузка с YouTube не выполняется и зависит от прав на видео и правил платформы.</p>
+        </div>
+      </section>
+
+    <section class="section section-possibilities" id="possibilities" aria-labelledby="possibilities-title">
+      <div class="container">
+        <div class="section-heading reveal"><span class="section-index">03 / ВОЗМОЖНОСТИ</span><h2 id="possibilities-title">Один процесс.<br />Четыре типа файлов.</h2><p>Каждый инструмент отвечает на конкретную задачу. Без списка функций, в котором приходится разбираться.</p></div>
+        <div class="capability-list">
+          <article class="capability reveal"><span class="capability-num">D / 01</span><div><h3>Документы</h3><p>Конвертируйте DOCX в PDF, чтобы файл открылся в нужном виде.</p></div><div class="capability-transform"><span>DOCX</span><b>→</b><span>PDF</span></div></article>
+          <article class="capability reveal"><span class="capability-num">I / 02</span><div><h3>Изображения</h3><p>Меняйте PNG на JPEG для отправки, публикации или экономии места.</p></div><div class="capability-transform"><span>PNG</span><b>→</b><span>JPEG</span></div></article>
+          <article class="capability reveal"><span class="capability-num">V / 03</span><div><h3>Видео</h3><p>Добавьте ссылку на доступный ролик и сохраните видеофайл.</p></div><div class="capability-transform"><span>ССЫЛКА</span><b>→</b><span>MP4</span></div></article>
+          <article class="capability reveal"><span class="capability-num">A / 04</span><div><h3>Аудио</h3><p>Обрежьте запись и оставьте только нужный фрагмент.</p></div><div class="capability-transform"><span>ЗАПИСЬ</span><b>→</b><span>ФРАГМЕНТ</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section" id="my-files" aria-labelledby="story-title">
+      <div class="story-image"><img src="assets/unsplash-video-editor.jpg" alt="Автор монтирует видео на компьютере в тёмной студии" loading="lazy" /><span class="story-image-label">РАБОЧИЙ МАТЕРИАЛ / 04</span></div>
+      <div class="story-copy"><div class="story-copy-inner reveal"><span class="section-index">04 / МОИ ФАЙЛЫ</span><h2 id="story-title">Сделали файл.<br /><em>Нашли его снова.</em></h2><p>После загрузки, конвертации или обрезки результат остаётся в DIVA. Отдельный пункт «Мои файлы» в нижнем меню ведёт к сохранённым документам, изображениям, видео и аудио.</p><div class="story-steps"><div><span>01</span><strong>Получили результат</strong><small>Например, видео в 480p или документ PDF.</small></div><div><span>02</span><strong>Открыли позже</strong><small>Файл уже лежит в библиотеке приложения.</small></div></div><span class="story-credit">Фото: <a href="https://unsplash.com/photos/person-editing-video-in-dark-workspace-ZdOsQiwp0Ss" target="_blank" rel="noopener noreferrer">Nubelson Fernandes / Unsplash</a></span></div></div>
+    </section>
+
+    <section class="section interface-section" id="interface" aria-labelledby="interface-title">
+      <div class="container"><div class="interface-heading reveal"><div><span class="section-index">05 / ИНТЕРФЕЙС</span><h2 id="interface-title">Так может выглядеть<br />DIVA на iPhone.</h2></div><p>На главном экране — добавление файла, фото или ссылки. После выбора материала — инструменты. «Мои файлы» доступны из нижней навигации.</p></div><figure class="phone-figure reveal"><img class="phone-desktop" src="assets/diva-iphone-concept.png" alt="Два экрана концепта DIVA: добавление файла и инструменты для видео" loading="lazy" /><div class="phone-mobile" aria-hidden="true"><div class="phone-crop"><img src="assets/diva-iphone-concept.png" alt="" loading="lazy" /></div><div class="phone-crop phone-crop-right"><img src="assets/diva-iphone-concept.png" alt="" loading="lazy" /></div></div><figcaption>Визуальный концепт будущего приложения. iPhone-версия ещё не выпущена.</figcaption></figure></div>
+    </section>
+
+    <section class="closing-section"><div class="container closing-layout"><div><span class="section-index">DIVA / СТАТУС ПРОЕКТА</span><h2>Сейчас — бот.<br /><em>Далее — приложение.</em></h2></div><div><p>Операции с файлами уже выполняет Telegram-бот. Лендинг показывает, как те же задачи могут быть организованы в iPhone-приложении.</p><a class="button button-primary" href="#process">Повторить демонстрацию <span aria-hidden="true">↗</span></a></div></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container"><a class="brand brand-lockup" href="#top" aria-label="DIVA — наверх"><img class="brand-mark" src="assets/diva-mark.svg" alt="" width="26" height="24" /><img class="brand-wordmark" src="assets/diva-wordmark.svg" alt="" width="72" height="20" /></a><span>Документы · Изображения · Видео · Аудио</span><span>Концепт приложения / 2026</span></div></footer>
+  <script src="assets/vendor/gsap.min.js" defer></script>
+  <script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+  <script src="main.js" defer></script>
+  <script src="demo.js" defer></script>
+  <script type="module" src="data-field.js"></script>
+  <script type="module" src="explore.bundle.js"></script>
+</body>
+</html>
